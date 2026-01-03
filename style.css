@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1520854221256-17451cc331bf")
+    center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: gold;
+}
+
+.tagline {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about,
+.gallery,
+.why,
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.why ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
