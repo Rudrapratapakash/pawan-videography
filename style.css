@@ -1,117 +1,107 @@
-body {
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  background: #000;
-  color: #fff;
+*{
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: #000;
+    color: #fff;
+}
+
+/* HERO */
 .hero {
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1520854221256-17451cc331bf")
-    center/cover;
-  position: relative;
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=80") no-repeat center;
+    background-size: cover;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.75);
-  height: 100%;
-  text-align: center;
-  padding-top: 150px;
+    background: rgba(0,0,0,0.8);
+    min-height: 100vh;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 .hero h1 {
-  font-size: 48px;
-  color: gold;
+    font-size: 36px;
+    color: gold;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin: 10px 0;
 }
 
 .tagline {
-  font-size: 22px;
-  margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
+/* BUTTON */
 .btn {
-  background: gold;
-  color: black;
-  padding: 12px 25px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-.about,
-.gallery,
-.why,
-.contact {
-  padding: 60px;
-  text-align: center;
+/* SECTIONS */
+.about, .gallery, .why, .contact {
+    padding: 40px 20px;
+    text-align: center;
 }
 
 h2 {
-  color: gold;
+    color: gold;
+    margin-bottom: 20px;
 }
 
+/* GALLERY */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .grid img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
+/* WHY */
 .why ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .why li {
-  margin: 10px 0;
-  font-size: 18px;
+    margin: 12px 0;
+    font-size: 16px;
 }
 
+/* FOOTER */
 footer {
-  background: #111;
-  text-align: center;
-  padding: 20px;
-}
-@media (max-width: 768px) {
-
-.hero {
-    height: auto;
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
 }
 
-.overlay {
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
+/* MOBILE FIX */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 28px;
+    }
 
-.hero h1 {
-    font-size: 28px;
-    padding: 0 10px;
-}
+    .tagline {
+        font-size: 16px;
+    }
 
-.tagline {
-    font-size: 16px;
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.about, .gallery, .why, .contact {
-    padding: 30px 15px;
-}
-
-.grid {
-    grid-template-columns: 1fr;
-}
-
-.why li {
-    font-size: 16px;
-}
-
-}
-
