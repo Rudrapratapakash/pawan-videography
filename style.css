@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  background: url("images//pexels-vireshstudio-2060240.jpg") center/cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.75);
+  height: 80%;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.corner-card {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+  z-index: 999;
+}
+.corner-text {
+  color: #f5c97a;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.corner-photo {
+  width: 170px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0, 0.7);
+  display: block;
+  transition: 0.3s ease;
+}
+.corner-photo:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: gold;
+}
+
+.tagline {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about,
+.gallery,
+.why,
+.contact {
+  padding: 60px;
+  text-align: center;
+}
+
+h2 {
+  color: gold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.why ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+  }
+
+  .overlay {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .about,
+  .gallery,
+  .why,
+  .contact {
+    padding: 30px 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why li {
+    font-size: 16px;
+  }
+
+  .corner-card {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .corner-card img {
+    width: 100px;
+    border-radius: 10px;
+  }
+
+  .corner-text {
+    font-size: 12px;
+  }
+}
