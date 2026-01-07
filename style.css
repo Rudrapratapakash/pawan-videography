@@ -101,54 +101,89 @@ footer {
   padding: 20px;
 }
 @media (max-width: 768px) {
-  /* HERO SECTION: मोबाइल की पूरी स्क्रीन लेगा */
+  /* HERO: Switch to dynamic height to handle mobile URL bars better */
   .hero {
-    height: 100vh; /* पुराने फोन्स के लिए */
-    height: 100dvh; /* नए मोबाइल्स के लिए (Address bar fix) */
-    min-height: 400px; /* इससे छोटा नहीं होगा */
-    background-position: center top; /* फोटो का चेहरा न कटे */
+    height: 100vh; /* Fallback */
+    height: 100dvh; /* Dynamic viewport height for modern mobile browsers */
+    background-position: center;
+    background-size: cover;
   }
 
-  /* OVERLAY: पूरा काला पर्दा और टेक्स्ट को सेंटर करेगा */
+  /* OVERLAY: Needs to fill the screen, not just 80% like desktop */
   .overlay {
-    background: rgba(0, 0, 0, 0.75);
-    height: 55%;
-    text-align: center;
-    padding-top: 100%;
+    height: 100%; /* CRITICAL FIX: Overrides the 80% from desktop */
+    width: 100%; /* Ensure full width */
+    padding: 0 20px; /* Remove vertical padding, let Flexbox handle it */
 
-    /* Flexbox से सब कुछ बीच (Center) में लाएं */
+    /* Use Flexbox to center text effectively */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Centers text vertically */
     align-items: center;
+    text-align: center;
+
+    /* Add a slight offset so text doesn't hit the corner image */
+    padding-bottom: 100px;
   }
 
-  /* TEXT ADJUSTMENTS */
   .hero h1 {
-    margin-top: 100px;
-    font-size: 28px; /* टेक्स्ट थोड़ा छोटा ताकि मोबाइल में फिट हो */
+    font-size: 35px; /* Slightly larger than 26px for better impact */
+    line-height: 1.2;
     margin-bottom: 15px;
-    line-height: 1.3;
-    width: 50%; /* किनारों से चिपकेगा नहीं */
   }
 
   .tagline {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-bottom: 25px;
-    width: 70%;
+    opacity: 0.9;
+    max-width: 90%; /* Prevents text from hitting edges */
   }
 
-  /* CORNER PHOTO: इसे सही जगह सेट करें */
+  .btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px; /* Consistent with desktop */
+  }
+
+  /* CONTENT SECTIONS */
+  .about,
+  .gallery,
+  .why,
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .why li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
   .corner-card {
-    position: absolute;
-    bottom: 40px; /* नीचे से थोड़ा ऊपर */
-    right: 50%; /* स्क्रीन के बीच से शुरू */
-    transform: translateX(50%); /* सेंटर में सेट करें */
-    width: 130px;
-    z-index: 10;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    transform: none;
   }
 
   .corner-card img {
-    border: 2px solid gold; /* फोटो को हाईलाइट करने के लिए */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .corner-text {
+    margin-top: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
+    color: #f5c97a;
+    border-radius: 4px;
+    display: inline-block; /* Wraps background around text only */
   }
 }
