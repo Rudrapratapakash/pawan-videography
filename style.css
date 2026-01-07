@@ -111,11 +111,10 @@ footer {
 
   /* OVERLAY: पूरा काला पर्दा और टेक्स्ट को सेंटर करेगा */
   .overlay {
-    margin-top: 50px;
-    height: 80% !important; /* Desktop के 80% को हटाकर 100% करेगा */
-    width: 100%;
-    padding-top: 0 !important; /* ऊपर का गैप खत्म */
-    padding-bottom: 0 !important; /* नीचे का गैप खत्म */
+    background: rgba(0, 0, 0, 0.75);
+    height: 55%;
+    text-align: center;
+    padding-top: 100%;
 
     /* Flexbox से सब कुछ बीच (Center) में लाएं */
     display: flex;
