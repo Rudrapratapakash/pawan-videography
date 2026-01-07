@@ -40,7 +40,7 @@ body {
 }
 
 .corner-photo {
-  width: 220px;
+  width: 150px;
   border-radius: 14px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0, 0.7);
   display: block;
@@ -173,14 +173,14 @@ footer {
   }
 
   .corner-card {
-    right: 20px;
+    left: 20px;
     bottom: 20px;
-    width: 100px;
+    width: 120px;
     transform: none;
   }
 
   .corner-card img {
-    width: 220px;
+    width: 120px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
   }
@@ -188,7 +188,7 @@ footer {
   .corner-text {
     margin-top: 5px;
     padding: 4px 8px;
-    font-size: 12px;
+    font-size: 15px;
     background: rgba(0, 0, 0, 0.8); /* Darker background for readability */
     color: #f5c97a;
     border-radius: 4px;
