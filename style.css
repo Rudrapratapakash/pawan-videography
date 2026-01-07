@@ -40,7 +40,7 @@ body {
 }
 
 .corner-photo {
-  width: 170px;
+  width: 220px;
   border-radius: 14px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0, 0.7);
   display: block;
@@ -180,7 +180,7 @@ footer {
   }
 
   .corner-card img {
-    width: 100%;
+    width: 220px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
   }
