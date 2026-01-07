@@ -112,18 +112,18 @@ footer {
   /* OVERLAY: Needs to fill the screen, not just 80% like desktop */
   .overlay {
     height: 100%; /* CRITICAL FIX: Overrides the 80% from desktop */
-    width: 100%; /* Ensure full width */
+    width: 100%;  /* Ensure full width */
     padding: 0 20px; /* Remove vertical padding, let Flexbox handle it */
-
+    
     /* Use Flexbox to center text effectively */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centers text vertically */
     align-items: center;
     text-align: center;
-
+    
     /* Add a slight offset so text doesn't hit the corner image */
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
   }
 
   .hero h1 {
