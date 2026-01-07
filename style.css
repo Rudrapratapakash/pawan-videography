@@ -105,12 +105,13 @@ footer {
   .hero {
     height: 100vh; /* पुराने फोन्स के लिए */
     height: 100dvh; /* नए मोबाइल्स के लिए (Address bar fix) */
-    min-height: 600px; /* इससे छोटा नहीं होगा */
+    min-height: 400px; /* इससे छोटा नहीं होगा */
     background-position: center top; /* फोटो का चेहरा न कटे */
   }
 
   /* OVERLAY: पूरा काला पर्दा और टेक्स्ट को सेंटर करेगा */
   .overlay {
+    margin-top: 50px;
     height: 80% !important; /* Desktop के 80% को हटाकर 100% करेगा */
     width: 100%;
     padding-top: 0 !important; /* ऊपर का गैप खत्म */
@@ -129,13 +130,13 @@ footer {
     font-size: 28px; /* टेक्स्ट थोड़ा छोटा ताकि मोबाइल में फिट हो */
     margin-bottom: 15px;
     line-height: 1.3;
-    width: 90%; /* किनारों से चिपकेगा नहीं */
+    width: 50%; /* किनारों से चिपकेगा नहीं */
   }
 
   .tagline {
     font-size: 20px;
     margin-bottom: 25px;
-    width: 90%;
+    width: 70%;
   }
 
   /* CORNER PHOTO: इसे सही जगह सेट करें */
