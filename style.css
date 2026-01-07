@@ -105,12 +105,12 @@ footer {
   .hero {
     height: 50dvh; /* Dynamic viewport height for modern mobile browsers */
     background-position: center;
-    background-size: auto;
+    background-size: contain;
   }
 
   /* OVERLAY: Needs to fill the screen, not just 80% like desktop */
   .overlay {
-    height: 100%; /* CRITICAL FIX: Overrides the 80% from desktop */
+    height: 50%; /* CRITICAL FIX: Overrides the 80% from desktop */
     width: 100%; /* Ensure full width */
     padding: 0 20px; /* Remove vertical padding, let Flexbox handle it */
 
@@ -136,7 +136,7 @@ footer {
     line-height: 1.5;
     margin-bottom: 25px;
     opacity: 0.9;
-    max-width: 90%; /* Prevents text from hitting edges */
+    max-width: 50%; /* Prevents text from hitting edges */
   }
 
   .btn {
