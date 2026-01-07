@@ -13,7 +13,7 @@ body {
 
 .overlay {
   background: rgba(0, 0, 0, 0.75);
-  height: 100%;
+  height: 80%;
   text-align: center;
   padding-top: 150px;
 }
@@ -111,7 +111,7 @@ footer {
 
   /* OVERLAY: पूरा काला पर्दा और टेक्स्ट को सेंटर करेगा */
   .overlay {
-    height: 100% !important; /* Desktop के 80% को हटाकर 100% करेगा */
+    height: 80% !important; /* Desktop के 80% को हटाकर 100% करेगा */
     width: 100%;
     padding-top: 0 !important; /* ऊपर का गैप खत्म */
     padding-bottom: 0 !important; /* नीचे का गैप खत्म */
