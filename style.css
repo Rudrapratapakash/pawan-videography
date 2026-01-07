@@ -1,3 +1,10 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* यह लाइन साइड की एक्स्ट्रा जगह हटा देगी */
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
@@ -100,7 +107,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   /* HERO: Switch to dynamic height to handle mobile URL bars better */
   .hero {
     height: 100vh; /* Fallback */
@@ -111,9 +118,9 @@ footer {
 
   /* OVERLAY: Needs to fill the screen, not just 80% like desktop */
   .overlay {
-    height: 100%; /* CRITICAL FIX: Overrides the 80% from desktop */
+    height: 90%; /* CRITICAL FIX: Overrides the 80% from desktop */
     width: 100%; /* Ensure full width */
-    padding: 0 20px; /* Remove vertical padding, let Flexbox handle it */
+    padding: 0px; /* Remove vertical padding, let Flexbox handle it */
 
     /* Use Flexbox to center text effectively */
     display: flex;
@@ -127,6 +134,7 @@ footer {
   }
 
   .hero h1 {
+    width: 100%;
     font-size: 35px; /* Slightly larger than 26px for better impact */
     line-height: 1.2;
     margin-bottom: 15px;
